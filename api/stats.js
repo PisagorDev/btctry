@@ -11,7 +11,7 @@ router.get('/stats', (req, res) => {
     // Burada verileri yanıt olarak gönderebilirsiniz
     const html = `<h2>trying</h2><p>Intelligence: 55</p>`
     res.setHeader('Content-Type', 'application/json');
-    res.send(JSON.stringify(stats));
+    res.json({html : html});
   });
 
 module.exports = router;
