@@ -18,9 +18,12 @@ app.get('/stats', (req, res) => {
   const image = "https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
   const stats = { name: "arif", intelligence: 24124, image: image, html: html};
   res.setHeader('Content-Type', 'application/json');
-  res.end(JSON.stringify(stats));
+  res.send(JSON.stringify(stats));
 });
 
+app.get('/', (req,res) => {
+    res.send("aa")
+})
 app.listen(3000, () => {
   console.log('Sunucu adresinde çalışıyor.');
 });
