@@ -9,7 +9,7 @@ const router = express.Router();
  */
 router.get('/stats', (req, res) => {
     // Burada verileri yanıt olarak gönderebilirsiniz
-    const html = `<h2>trying</h2><p>Intelligence: 55</p>`
+    const html = `<h2>trying</h2><p>Intelligence: 60</p>`
     res.setHeader('Content-Type', 'application/json');
     res.json({html : html});
   });
